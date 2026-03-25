@@ -59,10 +59,11 @@ export const QuestionCard = ({ question, onAnswer }: QuestionCardProps) => {
         
         {/* 画像があれば表示 */}
         {question.imageUrl && (
-          <div className="mt-4 rounded-xl overflow-hidden border border-surface-200 dark:border-surface-700 bg-surface-50 dark:bg-surface-900 shadow-sm">
+          <div className="w-full flex justify-center my-4 overflow-hidden rounded-lg bg-surface-50 dark:bg-surface-800 border-2 border-surface-200 dark:border-surface-700">
             <img 
-              src={question.imageUrl} 
+              src={`${import.meta.env.BASE_URL}${question.imageUrl.startsWith('/') ? question.imageUrl.slice(1) : question.imageUrl}`} 
               alt="問題の図表" 
+
               className="w-full h-auto object-contain max-h-64"
               loading="lazy"
             />

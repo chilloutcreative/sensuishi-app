@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<RouteWrapper><Home /></RouteWrapper>} />
         {/* 学習中は画面を広く使いたいため、ボトムナビを隠す */}

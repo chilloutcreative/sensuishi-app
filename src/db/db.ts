@@ -78,7 +78,7 @@ export const populateDummyData = async () => {
     const count = await db.questions.count();
     if (count > 0) return; // 既にデータがあれば何もしない
 
-    const response = await fetch('/data/initial_questions.json');
+    const response = await fetch(`${import.meta.env.BASE_URL}data/initial_questions.json`);
     if (!response.ok) {
       throw new Error('Failed to fetch initial data');
     }
