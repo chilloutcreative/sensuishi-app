@@ -259,7 +259,7 @@ export const Settings = () => {
             アプリの使い勝手や、問題の誤植、追加してほしい機能などがありましたらお聞かせください。
           </p>
           <a 
-            href="https://forms.gle/YOUR_GOOGLE_FORM_URL" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeh6hm3NR71Dzc2puIDxQZ6y8_zUdzNHDGs3CmO9NFCXhyWWg/viewform?usp=header" 
             target="_blank" 
             rel="noopener noreferrer"
             className="block w-full text-center bg-primary-600 text-white font-bold py-3 px-4 rounded-xl shadow-sm hover:bg-primary-700 transition-colors"
