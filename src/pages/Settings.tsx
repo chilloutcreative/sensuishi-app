@@ -247,6 +247,27 @@ export const Settings = () => {
           <p>Version 1.0.0</p>
         </div>
       </div>
+
+      {/* フィードバックセクション */}
+      <div className="bg-white dark:bg-surface-800 rounded-2xl p-5 shadow-sm border border-surface-200 dark:border-surface-700 space-y-4">
+        <h2 className="font-semibold text-surface-500 flex items-center gap-2">
+          <span>💬</span> フィードバック
+        </h2>
+        
+        <div className="space-y-3">
+          <p className="text-sm text-surface-600 dark:text-surface-400 leading-relaxed">
+            アプリの使い勝手や、問題の誤植、追加してほしい機能などがありましたらお聞かせください。
+          </p>
+          <a 
+            href="https://forms.gle/YOUR_GOOGLE_FORM_URL" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block w-full text-center bg-primary-600 text-white font-bold py-3 px-4 rounded-xl shadow-sm hover:bg-primary-700 transition-colors"
+          >
+            ご意見・ご要望を送る
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
